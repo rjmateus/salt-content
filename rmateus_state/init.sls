@@ -4,4 +4,9 @@
     - contents: |
         test_rmateus 4:
         {{ grains['hostname'] }}.{{ grains['domain'] }}
-        data: {{ release || "none" }}
+        {% if release %} 
+        data: {{ release }}
+        {% else %}
+        data: none
+        {% endif %}
+
