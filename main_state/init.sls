@@ -1,4 +1,4 @@
-{% set release = 10) %}
+{% set release = 10 %}
 
 include:
   - rmateus_state
