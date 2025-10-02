@@ -10,3 +10,6 @@
         data: none
         {% endif %}
 
+cmd.run:
+   - name: cat
+   - stdin: salt://rmateus_state/my_file.yaml
