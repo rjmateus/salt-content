@@ -10,6 +10,10 @@
         data: none
         {% endif %}
 
+/root/my_file.yaml:
+  file.managed:
+    - source: salt://rmateus_state/my_file.yaml
+
 my_command:
   cmd.run:
     - name: cat
